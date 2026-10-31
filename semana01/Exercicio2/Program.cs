@@ -15,7 +15,9 @@ class Program
         int numeroNota = int.Parse(notaFinal);
         int notaResto = numeroNota % 10;
         string sinal = "";
+        string letra = "";
 
+        
         if (notaResto >= 7 && numeroNota >60)
         {
             sinal = "+";
@@ -46,27 +48,47 @@ class Program
             {
                 sinal = "";
             }
-            Console.WriteLine($"parabens você tirou nota A{sinal} você passou");
+            letra = "A";
+            
         }
 
         else if(numeroNota >= 80)
         {
 
-            Console.WriteLine($"parabens você tirou nota B{sinal} você passou");
+           letra = "B";
         }
         else if(numeroNota >= 70)
         {
 
-            Console.WriteLine($"parabens você tirou nota C{sinal} você está na média");
+            letra = "C";
         }
         else if(numeroNota >= 60)
         {
 
-            Console.WriteLine($"parabens você tirou nota D{sinal} você passou na média");
+            letra = "D";
         }
         else
         {
-            Console.WriteLine("sua nota foi F, mais sorte na próxima tentativa");
+            letra = "F";
         }
+        
+
+        if(numeroNota >= 80)
+        {
+            Console.WriteLine($"Parabéns Você tirou a nota {letra}{sinal}");
+        }
+        else if(numeroNota >=70 && numeroNota < 80)
+        {
+            Console.WriteLine($"Você tirou a nota {letra}{sinal} passou na média");
+        }
+        else if(numeroNota < 70)
+        {
+            Console.WriteLine($"Você tirou a nota {letra}{sinal} mais sorte na próxima vez");
+        }
+        else
+        {
+            Console.WriteLine($"Você tirou a nota {letra}{sinal} mais sorte na próxima vez");
+        }
+        
     }
 }                                                                                                           
