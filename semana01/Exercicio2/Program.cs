@@ -38,6 +38,14 @@ class Program
             {
                 sinal = "";
             }
+            else if (notaResto < 3)
+            {
+                sinal = "-";
+            }
+            else
+            {
+                sinal = "";
+            }
             Console.WriteLine($"parabens você tirou nota A{sinal} você passou");
         }
 
