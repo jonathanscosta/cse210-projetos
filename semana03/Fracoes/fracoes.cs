@@ -12,9 +12,11 @@ public class Fracoes
         _denominador = 1;
       
     }
-     public string ExibirFracoes()
+    public Fracoes(int numNumerador)
     {
-        return $"{_numerador}/{_denominador}";
+        _numerador = numNumerador;
+        _denominador = 1;
+      
     }
     public Fracoes(int numerador, int denominador)
     {
@@ -22,6 +24,20 @@ public class Fracoes
         _denominador = denominador;
       
     }
+    public string ObterFracaoEmTexto()
+    {
+        string fracaoTexto = $"{_numerador}/{_denominador}";
+        return fracaoTexto;
+    }
+
+    public double ObterFracaoEmDecimal()
+    {
+        return (double)_numerador / (double)_denominador;
+    }
     
+     public string ExibirFracoes()
+    {
+        return $"{_numerador}/{_denominador}";
+    }
    
 }
