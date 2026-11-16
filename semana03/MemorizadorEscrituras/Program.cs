@@ -13,7 +13,7 @@ class Program
         string texto = "E se os homens vierem a mim, mostrar-lhes-ei sua fraqueza.  " +
                        "E dou a fraqueza aos homens a fim de que sejam humildes; " +
                        " e minha graça basta a todos os que se humilham perante mim;" +
-                       "porque caso se humilhem perante mim e tenham fé em mim, " +
+                       "porque caso se humilhem perante mim e tenham fé em mim," +
                        "então farei com que as coisas fracas se tornem fortes para eles.";
 
         // 3. Criar o objeto Escritura
