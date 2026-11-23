@@ -18,7 +18,7 @@ public class Endereco
         _pais = pais;
     }
 
-    // Getters e Setters
+    
     public string GetRua()
     {
         return _rua;
