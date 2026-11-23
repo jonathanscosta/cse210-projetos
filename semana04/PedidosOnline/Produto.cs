@@ -3,13 +3,13 @@ using System;
 
 public class Produto
 {
-    // Atributos privados: protegidos pelo encapsulamento
+    
     private string _nome;
     private string _idProduto;
     private decimal _preco;
     private int _quantidade;
 
-    // Construtor: recebe os dados para criar um produto
+    
     public Produto(string nome, string idProduto, decimal preco, int quantidade)
     {
         _nome = nome;
@@ -18,7 +18,7 @@ public class Produto
         _quantidade = quantidade;
     }
 
-    // Getters e Setters
+    
     public string GetNome()
     {
         return _nome;
@@ -59,7 +59,7 @@ public class Produto
         _quantidade = quantidade;
     }
 
-    // Calcula o custo total do produto
+    
     public decimal CalcularCustoTotal()
     {
         return _preco * _quantidade;
