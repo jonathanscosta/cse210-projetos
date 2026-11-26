@@ -6,9 +6,21 @@ class Program
     {
         // Console.WriteLine("Olá, Mundo! Este é o Projeto Tarefas.");
 
-        TarefaDeMatematica tarefa1 = new TarefaDeMatematica("Jonathan", "matematica","7.3", "8 - 19");
+        Tarefa tarefa1 = new Tarefa("Jonathan", "matematica");
 
         Console.WriteLine(tarefa1.ObterResumo());
-        Console.WriteLine(tarefa1.ObterListaDeTarefas());
+
+        TarefaDeMatematica tarefa2 = new TarefaDeMatematica("Jonathan", "matematica", "7.3", "8 - 19");
+
+        Console.WriteLine(tarefa2.ObterResumo());
+        Console.WriteLine(tarefa2.ObterListaDeTarefas());
+
+        TarefaDeRedacao tarefa3 = new TarefaDeRedacao("Jonathan", "As Brumas de Avalon", "redação");
+
+        Console.WriteLine(tarefa3.ObterResumo());
+        Console.WriteLine(tarefa3.ObterInformacoesDaRedacao());
+
+
     }
 }
+
